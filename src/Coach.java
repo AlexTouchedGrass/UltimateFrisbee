@@ -4,18 +4,18 @@ public class Coach extends Person {
     private boolean headCoach;
 
     //Constructor
-    public Coach(String firstName, String lastName, String expertise, boolean headCoach) {
+    public Coach(String firstName, String lastName, String role, boolean headCoach) {
         //Pulls from parent class
         super(firstName, lastName);
 
         //New for this class
-        setExpertise(expertise);
+        setRole(role);
         setHeadCoach(headCoach);
     }
 
     //Mutators
-    public void setExpertise(String expertise) {
-        this.expertise = expertise;
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public void setHeadCoach(boolean headCoach) {
@@ -23,7 +23,7 @@ public class Coach extends Person {
     }
 
     //Accessors
-    public String getExpertise() {
+    public String getRole() {
         return expertise;
     }
 
@@ -33,7 +33,7 @@ public class Coach extends Person {
 
     public String toString(){
         String s = "";
-        s += super.toString() + "\nExpertise: " + getExpertise();
+        s += super.toString() + "\nExpertise: " + getRole();
         if (getHeadCoach()) {
             s += "\nHead Coach";
         }

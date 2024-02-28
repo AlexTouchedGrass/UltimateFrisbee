@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03cafbc6-b448-4a0d-9696-9d474dbea2fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UltimateFrisbee.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Coach.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UltimateCaptain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UltimatePlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UltimateTeam.java" afterDir="false" />
-    </list>
+    <list default="true" id="03cafbc6-b448-4a0d-9696-9d474dbea2fa" name="Changes" comment="If our last few projects were like this I would rolling in 100's." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +42,14 @@
       <option name="presentableId" value="Default" />
       <updated>1709134773883</updated>
     </task>
+    <task id="LOCAL-00001" summary="If our last few projects were like this I would rolling in 100's.">
+      <created>1709135819618</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709135819618</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -67,5 +62,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="If our last few projects were like this I would rolling in 100's." />
+    <option name="LAST_COMMIT_MESSAGE" value="If our last few projects were like this I would rolling in 100's." />
   </component>
 </project>
