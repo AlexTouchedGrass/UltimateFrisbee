@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="03cafbc6-b448-4a0d-9696-9d474dbea2fa" name="Changes" comment="If our last few projects were like this I would rolling in 100's.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Coach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Coach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UltimatePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UltimatePlayer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

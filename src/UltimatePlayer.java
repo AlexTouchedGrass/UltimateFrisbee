@@ -1,10 +1,11 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class UltimatePlayer extends Person {
     //Attributes
     private int jerseyNumber; //Jersey number for the instance
     private static int jerseyNumberCounter; //Keeps track of how many jerseys have been assigned
-    private String position; //Handler or Cutter
+    private boolean position; //Handler or Cutter
 
     //Constructors
     public UltimatePlayer(String firstName, String lastName, int jerseyNumber, int jerseyNumberCounter, boolean position) {
@@ -16,51 +17,38 @@ public class UltimatePlayer extends Person {
     }
 
     //Mutators (Setters)
-    public void setGradeLevel(int gradeLevel){
-        if (gradeLevel >= 9 && gradeLevel <= 12) {
-            this.gradeLevel = gradeLevel;
+    public void setJerseyNumber(int jerseyNumber){
+        Random rand = new Random(); //This was unnecessary but I wanted to add it.
+        boolean done = false;
+
+        if (jerseyNumber >= 1 && jerseyNumber <= 100) {
+            this.jerseyNumber = jerseyNumber;
         } else {
-            this.gradeLevel = 9;
+            while (!done) {
+                this.jerseyNumber = rand.nextInt(100);
+                if (jerseyNumber > 0) {
+                    done = true;
+                }
+            }
         }
     }
 
-    public void setPointsEarned(int pointsEarned) {
-        if (pointsEarned >= 0) {
-            this.pointsEarned = pointsEarned;
-        } else {
-            this.pointsEarned = 0;
+    public void setJerseyNumberCounter(int jerseyNumberCounter) {
+        if (jerseyNumberCounter >= 0) {
+            this.jerseyNumberCounter = jerseyNumberCounter;
         }
     }
 
-    public void addPoints(int p){
-        if (p >= 0) {
-            pointsEarned += p;
-        }
-    }
-
-    public void addEvent(String event) {
-        events.add(event);
-    }
-
-    public void removeEvent(int indexOfEvent) {
-        if (indexOfEvent >= 0 && indexOfEvent < events.size()) {
-            events.remove(indexOfEvent);
-        }
-    }
-
-    public void clearEvents(){
-        events.clear();
-    }
+    public void setPosition(boolean position) {this.position = position;}
 
     //Accessors
-    public int getGradeLevel(){return gradeLevel;}
+    public int getJerseyNumber(){return jerseyNumber;}
 
-    public int getPointsEarned(){return pointsEarned;}
+    public int getJerseyNumberCounter(){return jerseyNumberCounter;}
 
-    public ArrayList <String> getEvents() {return events;}
+    public boolean getPosition() {return getPosition();}
 
     public String toString(){
-        return super.toString() + "\nGrade Level: " + getGradeLevel() + "\nPoints Earned: " //Continued on next line.
-                + getPointsEarned() + "\nEvents: " + getEvents();
+        return super.toString() + "\nJersey #: " + getJerseyNumber() + "\nPosition: " + getPosition();  //Continued on next line.
     }
 }
