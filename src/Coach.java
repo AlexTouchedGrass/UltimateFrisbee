@@ -1,44 +1,34 @@
 public class Coach extends Person {
     //Attributes
     private String expertise;
-    private boolean headCoach;
+    private boolean role;
 
     //Constructor
-    public Coach(String firstName, String lastName, String role, boolean headCoach) {
+    public Coach(String firstName, String lastName, boolean role) {
         //Pulls from parent class
         super(firstName, lastName);
 
         //New for this class
         setRole(role);
-        setHeadCoach(headCoach);
     }
 
     //Mutators
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    public void setHeadCoach(boolean headCoach) {
-        this.headCoach = headCoach;
-    }
+    public void setRole(boolean role) {this.role = role;}
 
     //Accessors
-    public String getRole() {
-        return expertise;
-    }
-
-    public boolean getHeadCoach() {
-        return headCoach;
+    public boolean getRole() {
+        return role;
     }
 
     public String toString(){
         String s = "";
-        s += super.toString() + "\nExpertise: " + getRole();
-        if (getHeadCoach()) {
-            s += "\nHead Coach";
+
+        s += super.getLastName() + ", " + super.getFirstName();
+        if (getRole()) {
+            s += "\n   Head Coach";
         }
         else {
-            s += "\nAssistant Coach";
+            s += "\n   Assistant Coach";
         }
         return s;
     }

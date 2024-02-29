@@ -2,16 +2,17 @@ import java.util.ArrayList;
 
 public class UltimatePlayer extends Person {
     //Attributes
-    private int gradeLevel;
-    private int pointsEarned;
-    private ArrayList <String> events = new ArrayList<String>();
+    private int jerseyNumber; //Jersey number for the instance
+    private static int jerseyNumberCounter; //Keeps track of how many jerseys have been assigned
+    private String position; //Handler or Cutter
 
     //Constructors
-    public UltimatePlayer(String firstName, String lastName, int gradeLevel, int pointsEarned) {
+    public UltimatePlayer(String firstName, String lastName, int jerseyNumber, int jerseyNumberCounter, boolean position) {
         //Wait until we make mutators - make interior last.
         super(firstName, lastName);
-        setGradeLevel(gradeLevel);
-        setPointsEarned(pointsEarned);
+        setJerseyNumber(jerseyNumber);
+        setJerseyNumberCounter(jerseyNumberCounter);
+        setPosition(position);
     }
 
     //Mutators (Setters)

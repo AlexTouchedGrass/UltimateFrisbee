@@ -20,4 +20,6 @@ public class Person {
     public String getLastName () {return lastName;}
 
     public String toString () {return "Name: " + getFirstName() + " " + getLastName();}
+
+    public int throwDisc (int pow) {return pow} //THIS IS A PLACEHOLDER WORK ON THIS
 }
