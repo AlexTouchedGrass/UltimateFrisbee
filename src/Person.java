@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Person {
     //Attributes
     private String firstName;
@@ -21,5 +22,9 @@ public class Person {
 
     public String toString () {return "Name: " + getFirstName() + " " + getLastName();}
 
-    public int throwDisc (int pow) {return pow} //THIS IS A PLACEHOLDER WORK ON THIS
+    public int throwDisc (int pow) {
+        pow = pow * 2;
+
+        return pow;
+    }
 }

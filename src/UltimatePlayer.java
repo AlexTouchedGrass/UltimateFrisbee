@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class UltimatePlayer extends Person {
     //Attributes
     private int jerseyNumber; //Jersey number for the instance
     private static int jerseyNumberCounter; //Keeps track of how many jerseys have been assigned
-    private boolean position; //Handler or Cutter
+    private String position; //Handler or Cutter
 
     //Constructors
-    public UltimatePlayer(String firstName, String lastName, int jerseyNumber, int jerseyNumberCounter, boolean position) {
+    public UltimatePlayer(String firstName, String lastName, int jerseyNumber, String position) {
         //Wait until we make mutators - make interior last.
         super(firstName, lastName);
         setJerseyNumber(jerseyNumber);
-        setJerseyNumberCounter(jerseyNumberCounter);
         setPosition(position);
     }
 
@@ -33,20 +33,28 @@ public class UltimatePlayer extends Person {
         }
     }
 
-    public void setJerseyNumberCounter(int jerseyNumberCounter) {
-        if (jerseyNumberCounter >= 0) {
-            this.jerseyNumberCounter = jerseyNumberCounter;
-        }
+    public static int setJerseyNumberCounter(int jerseyNumberCounter) {
+        jerseyNumberCounter++;
+        return jerseyNumberCounter;
     }
 
-    public void setPosition(boolean position) {this.position = position;}
+    public void setPosition(String position) {
+        Scanner scan = new Scanner(System.in);
+
+        position = scan.nextLine();
+        if (position.equalsIgnoreCase("Cutter" || position.equalsIgnoreCase("Handler"))) {
+
+        }
+
+        this.position = position;
+    }
 
     //Accessors
     public int getJerseyNumber(){return jerseyNumber;}
 
     public int getJerseyNumberCounter(){return jerseyNumberCounter;}
 
-    public boolean getPosition() {return getPosition();}
+    public String getPosition() {return getPosition();}
 
     public String toString(){
         return super.toString() + "\nJersey #: " + getJerseyNumber() + "\nPosition: " + getPosition();  //Continued on next line.
