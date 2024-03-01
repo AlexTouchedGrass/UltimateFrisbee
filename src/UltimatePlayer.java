@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -33,6 +32,7 @@ public class UltimatePlayer extends Person {
         }
     }
 
+    //Simply counts up 1 time each time Jersey Number is called. (CALL WITH JERSEY NUMBER)
     public static int setJerseyNumberCounter(int jerseyNumberCounter) {
         jerseyNumberCounter++;
         return jerseyNumberCounter;
@@ -40,13 +40,19 @@ public class UltimatePlayer extends Person {
 
     public void setPosition(String position) {
         Scanner scan = new Scanner(System.in);
+        boolean done = false;
 
-        position = scan.nextLine();
-        if (position.equalsIgnoreCase("Cutter" || position.equalsIgnoreCase("Handler"))) {
-
+        //While loop is to keep the user in the process of choosing Position until they give a valid response.
+        while (!done) {
+            position = scan.nextLine();
+            if (position.equalsIgnoreCase("Cutter") || position.equalsIgnoreCase("C")) {
+                this.position = position;
+            } else if (position.equalsIgnoreCase("Handler") || position.equalsIgnoreCase("H")) {
+                this.position = position;
+            } else {
+                this.position = "Handler";
+            }
         }
-
-        this.position = position;
     }
 
     //Accessors
@@ -58,5 +64,11 @@ public class UltimatePlayer extends Person {
 
     public String toString(){
         return super.toString() + "\nJersey #: " + getJerseyNumber() + "\nPosition: " + getPosition();  //Continued on next line.
+    }
+
+    public int throwDisc (int pow) {
+        pow = pow * 4;
+
+        return pow;
     }
 }
