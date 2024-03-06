@@ -16,9 +16,7 @@ public class Coach extends Person {
     public void setRole(boolean role) {this.role = role;}
 
     //Accessors
-    public boolean getRole() {
-        return role;
-    }
+    public boolean getRole() {return role;}
 
     public String toString(){
         String s = "";

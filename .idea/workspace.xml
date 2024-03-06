@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="03cafbc6-b448-4a0d-9696-9d474dbea2fa" name="Changes" comment="If our last few projects were like this I would rolling in 100's.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Coach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Coach.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UltimateCaptain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UltimateCaptain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UltimatePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UltimatePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UltimateTeam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UltimateTeam.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,20 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="UltimateTeam" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UltimateTeam" />
+      <module name="UltimateFrisbee" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UltimateTeam" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

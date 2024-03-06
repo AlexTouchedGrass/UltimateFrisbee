@@ -63,7 +63,13 @@ public class UltimatePlayer extends Person {
     public String getPosition() {return getPosition();}
 
     public String toString(){
-        return super.toString() + "\nJersey #: " + getJerseyNumber() + "\nPosition: " + getPosition();  //Continued on next line.
+        return super.toString() + "\n   Jersey #: " + getJerseyNumber() + "\n   Position: " + getPosition();  //Continued on next line.
+    }
+
+    public int throwDisc (int pow) {
+        pow = pow * 4;
+
+        return pow;
     }
 
     public int throwDisc (int pow) {

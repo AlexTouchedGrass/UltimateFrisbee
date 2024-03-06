@@ -20,7 +20,7 @@ public class Person {
 
     public String getLastName () {return lastName;}
 
-    public String toString () {return "Name: " + getFirstName() + " " + getLastName();}
+    public String toString () {return getLastName() + ", " + getFirstName();}
 
     public int throwDisc (int pow) {
         pow = pow * 2;
