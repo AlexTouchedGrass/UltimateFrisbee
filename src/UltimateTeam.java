@@ -58,7 +58,9 @@ public class UltimateTeam {
     }
 
     public String toString () {
-        return ;
+        String output;
+
+        return "COACHES" + "\n" + super.toString();
     }
 
 
