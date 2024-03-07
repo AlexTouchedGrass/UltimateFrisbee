@@ -31,8 +31,8 @@ public class UltimateTeam {
         }
 
         //Down Here Is Where Post-Creation Changes Are Made.
-        getHandlers();
-        getCutters();
+        System.out.println(getHandlers());
+        System.out.println(getCutters());
 
     }
 
